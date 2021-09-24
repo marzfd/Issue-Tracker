@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Issue Tracker</title>
+
+  <!-- Bootstrap CSS FrameWork -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <title>Random Quote</title>
+
+</head>
+
+<body onload="fetchIssues()">
+
+  <div class="container p-5">
+    <h1 class="mb-3">JS IssueTracker</h1>
+    <div class="p-3 pt-5 bg-dark bg-gradient bg-opacity-10 border rounded">
+      <h3>Add New Issue:</h3>
+      <form id="issueInputForm">
+        <div class="mb-4">
+          <label for="issueDesInput" class="form-label fw-bold mt-3">Description</label>
+          <input type="text" class="form-control" id="issueDesInput" placeholder="Describe the issue ... ">
+        </div>
+        <div class="mb-4">
+          <label for="issueSeverityInput" class="form-label fw-bold">Severity</label>
+          <select id="issueSeverityInput" class="form-select">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <label for="issueAssignedToInput" class="form-label fw-bold">Assigned To</label>
+          <input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter responsible ... ">
+        </div>
+        <button type="submit" class="btn btn-primary">Add</button>
+      </form>
+      <div>
+        <div class="col-lg-12">
+          <div id="issuesList">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer mt-2 fst-italic">
+      <p>&copy;2021 Created By Marzieh !</p>
+    </div>
+  </div>
+
+  <!-- ChanceJS -->
+  <script src="https://chancejs.com/chance.min.js"></script>
+
+  <!-- JQuery Code -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>
